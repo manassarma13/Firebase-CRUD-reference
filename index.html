@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SMG STATION COMPLETE FROM SCRATCH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main>
+    <form>
+        <label for="userId">User ID</label><br>
+        <input type="text" name="userId" id="userId"><br>
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName"><br>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" name="lastName" id="lastName"><br>  
+        <label for="age">Age</label><br>
+        <input type="number" name="age" id="age"><br>
+        <button id="addBtn" class="btn waves-effect waves-light">Add</button>
+        <button id="updateBtn" class="btn waves-effect waves-light">Update</button>
+        <button id="removeBtn" class="btn waves-effect red darken-1">Remove</button>
+    </form>
+  </main>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCPplYNvxbDBGqO6Cbft3CBPT2OE9SZZBQ",
+    authDomain: "smg-station.firebaseapp.com",
+    databaseURL: "https://smg-station.firebaseio.com",
+    projectId: "smg-station",
+    storageBucket: "smg-station.appspot.com",
+    messagingSenderId: "617870447538",
+    appId: "1:617870447538:web:a9fd0ee96ddc528cd0caab",
+    measurementId: "G-P930C7LMT5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+  <script src="./script.js"></script>
+</body>
+</html>  
